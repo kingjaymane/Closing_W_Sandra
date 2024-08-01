@@ -1,38 +1,45 @@
 /* style.css */
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Merriweather', serif; /* Elegant font for body text */
     margin: 0;
     padding: 0;
 }
 
 header {
-    background: transparent;
+    background: rgba(255, 255, 255, 0.3); /* White background with transparency */
     color: white;
     padding: 1rem 0;
     position: absolute;
     width: 100%;
     top: 0;
     z-index: 10;
+    backdrop-filter: blur(1px); /* Blur effect */
+    -webkit-backdrop-filter: blur(1px); /* For Safari */
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2); /* Optional: border to enhance visual separation */
 }
 
 header .navbar-brand {
-    color: white;
-    font-size: 1.5rem; /* Increased font size */
+    color: rgb(0, 0, 0) !important;
+    font-size: 2.0rem; /* Increased font size */
+    font-family: 'Playfair Display', serif; /* Elegant font for brand text */
 }
 
 header .navbar-nav .nav-link {
-    color: white;
-    font-size: 1.2rem; /* Increased font size */
+    color: rgb(3, 3, 3) !important;
+    font-size: 1.5rem; /* Increased font size */
+    font-family: 'Playfair Display', serif; /* Elegant font for nav links */
+    transition: color 0.3s ease; /* Smooth transition for color change */
 }
 
 header .navbar-nav .nav-link:hover {
     color: #ccc;
+    text-decoration: underline; /* Underline on hover */
 }
 
 #hero {
     background: url('../Assets/gate-view.jpg') no-repeat center center/cover;
-    height: 100vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -45,14 +52,24 @@ header .navbar-nav .nav-link:hover {
     font-size: 2.5rem;
 }
 
+#hero p {
+    font-size: 1.5rem;
+}
+
+
+
 #about {
-    background-color: #d6cbeb3f; 
+    background-color: white; 
     padding: 2rem 0; 
 }
 
 #about img {
     max-width: 100%;
     height: auto;
+}
+
+#about p{
+    font-size: 1.5rem; 
 }
 
 #services {
