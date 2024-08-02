@@ -3,9 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Featured Listing</title>
+    <title>Search Homes</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/featured.css">
+    <style>
+        .iframe-container {
+            position: relative;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+        }
+        .iframe-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+    </style>
 </head>
 <body>
     <header>
@@ -33,16 +49,16 @@
     <section id="banner">
         <div class="banner-overlay">
             <div class="container text-center">
-                <h1>Featured Listing</h1>
+                <h1>Search Your Dream Home Today</h1>
             </div>
         </div>
     </section>
 
     <section id="featured-listing" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Featured Listing</h2>
+            <h2 class="text-center mb-4">Search Homes</h2>
             <div class="iframe-container">
-                <iframe src="https://www.zillow.com/profile/sceliterealtygroup" frameborder="0"></iframe>
+                <iframe id="zillowFrame" src="https://www.zillow.com/profile/sceliterealtygroup" frameborder="0"></iframe>
             </div>
         </div>
     </section>
@@ -56,5 +72,15 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var urlParams = new URLSearchParams(window.location.search);
+            var zipCode = urlParams.get('zipcode');
+            if (zipCode) {
+                var zillowUrl = `https://www.zillow.com/homes/${zipCode}_rb/`;
+                document.getElementById('zillowFrame').src = zillowUrl;
+            }
+        });
+    </script>
 </body>
 </html>

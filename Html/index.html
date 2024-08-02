@@ -4,9 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Closing with Sandra</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="../css/style.css">
 </head>
+<body>
 <body>
     <header>
         <div class="container">
@@ -40,15 +43,23 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-6">
-                    <h2>About Sandra</h2>
-                    <p>Raised in the sunny state of California, Sandra has relocated to the east coast and has been a resident of North Carolina since 2005. 
-                        Sandra is married to a Law Enforcement officer and understands the importance of a safe home.
-                        She earned her real estate license and has been fully dedicated in the real estate profession since then.
-                         After having worked varies roles in the dental field for almost 30 years, Sandra brings a wealth of knowledge, understanding, passion and building trust in working with others.</p>
+                    <h2>Sandra Smith</h2>
+                    <p>I’m a bilingual real estate agent with Dream Realty in Cumberland County, 
+                        NC and the nearby areas, providing home-buyers and sellers with professional,
+                         responsive and attentive real estate services. Want an agent who'll really 
+                         listen to what you want in a home? Need an agent who will fight for your 
+                         dream home? Give me a call! 
+                        I'm eager to help and would love to talk to you.</p>
                 </div>
                 <div class="col-md-6">
                     <img src="/Assets/full_body_red.jpg" alt="Sandra" class="img-fluid rounded">
                 </div>
+            </div>
+            <hr class="blue-line">
+            <div class="contact-card mt-4">
+                <h4>Contact Me</h4>
+                <p>Phone: (910) 549-8213</p>
+                <p>Email:<a href="mailto:Ssmithrealtor213@gmail.com">Ssmithrealtor213@gmail.com</a></p>
             </div>
         </div>
     </section>
@@ -90,45 +101,51 @@
 
     <section id="listings" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Featured Neighborhoods</h2>
-            <div class="row">
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="../Assets/house1.jpg" class="card-img-top" alt="Listing 1">
-                        <div class="card-body">
-                            <h5 class="card-title">Beautiful Family Home</h5>
-                            <p class="card-text">$500,000 - 4 Bed, 3 Bath</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
-                        </div>
+            <h2 class="text-center mb-4">Featured Areas</h2>
+            <div class="carousel">
+                <div class="card">
+                    <img src="../Assets/house6.jpg" class="card-img-top" alt="ZIP 28301">
+                    <div class="card-body">
+                        <h5 class="card-title">Fayetteville, NC <br> 28301</h5>
+                        <a href="featured.html?zipcode=28301" class="btn btn-primary">View</a>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="../Assets/house2.jpg" class="card-img-top" alt="Listing 2">
-                        <div class="card-body">
-                            <h5 class="card-title">Modern Apartment</h5>
-                            <p class="card-text">$350,000 - 2 Bed, 2 Bath</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
-                        </div>
+                <div class="card">
+                    <img src="../Assets/house2.jpg" class="card-img-top" alt="ZIP 28307">
+                    <div class="card-body">
+                        <h5 class="card-title">Spring Lake, NC <br> 28307</h5>
+                        <a href="featured.html?zipcode=28307" class="btn btn-primary">View</a>
                     </div>
                 </div>
-                <div class="col-md-4">
-                    <div class="card">
-                        <img src="../Assets/house3.jpg" class="card-img-top" alt="Listing 3">
-                        <div class="card-body">
-                            <h5 class="card-title">Cozy Cottage</h5>
-                            <p class="card-text">$250,000 - 3 Bed, 1 Bath</p>
-                            <a href="#" class="btn btn-primary">View Details</a>
-                        </div>
+                <div class="card">
+                    <img src="../Assets/house3.jpg" class="card-img-top" alt="ZIP 28358">
+                    <div class="card-body">
+                        <h5 class="card-title">Lumberton, NC<br> 28358</h5>
+                        <a href="featured.html?zipcode=28358" class="btn btn-primary">View</a>
                     </div>
                 </div>
+                <div class="card">
+                    <img src="../Assets/house4.jpg" class="card-img-top" alt="ZIP 28312">
+                    <div class="card-body">
+                        <h5 class="card-title">Eastover, NC <br> 28312</h5>
+                        <a href="featured.html?zipcode=28312" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <img src="../Assets/house5.jpg" class="card-img-top" alt="ZIP 28395">
+                    <div class="card-body">
+                        <h5 class="card-title">Wade, NC <br> 28395</h5>
+                        <a href="featured.html?zipcode=28395" class="btn btn-primary">View</a>
+                    </div>
+                </div>
+                <!-- Add more card divs for additional listings -->
             </div>
         </div>
     </section>
-
+    
     <section id="testimonials" class="bg-light py-5">
         <div class="container">
-            <h2 class="text-center mb-4">What Our Clients Say</h2>
+            <h2 class="text-center mb-4">Testimonials</h2>
             <div class="row">
                 <div class="col-md-6">
                     <div class="card">
@@ -156,41 +173,120 @@
                         </div>
                     </div>
                 </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <blockquote class="blockquote">
+                                <p class="mb-0">Sandra's expertise and dedication made all the difference...</p>
+                                <footer class="blockquote-footer">Michael and Emily Johnson</footer>
+                            </blockquote>
+                            <div class="stars">
+                                &#9733; &#9733; &#9733; &#9733; &#9733;
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-body">
+                            <blockquote class="blockquote">
+                                <p class="mb-0">We couldn't be happier with the service Sandra provided...</p>
+                                <footer class="blockquote-footer">Paul and Linda Williams</footer>
+                            </blockquote>
+                            <div class="stars">
+                                &#9733; &#9733; &#9733; &#9733; &#9733;
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
 
     <section id="contact" class="py-5">
         <div class="container">
-            <h2 class="text-center mb-4">Get in Touch</h2>
-            <form>
-                <div class="form-row">
-                    <div class="form-group col-md-6">
-                        <label for="name">Name</label>
-                        <input type="text" class="form-control" id="name" placeholder="Your Name">
-                    </div>
-                    <div class="form-group col-md-6">
-                        <label for="email">Email</label>
-                        <input type="email" class="form-control" id="email" placeholder="Your Email">
+            <div class="form-container">
+                <div class="left-container">
+                    <div class="left-inner-container">
+                        <h2>Let's Chat</h2>
+                        <p>Got a question, need expert advice, or just looking to explore your options? I’m here to help you every step of the way.</p>
+                        <p>Feel free to reach out using the contact form, and let’s get started on<br> your real estate journey!</p>
                     </div>
                 </div>
-                <div class="form-group">
-                    <label for="message">Message</label>
-                    <textarea class="form-control" id="message" rows="4" placeholder="Your Message"></textarea>
+                <div class="right-container">
+                    <div class="right-inner-container">
+                        <form action="#">
+                            <h2 class="lg-view">Contact Me</h2>
+                            <h2 class="sm-view">Let's Chat</h2>
+                            <p>* Required</p>
+                            <div class="social-container">
+                                <a href="#" class="social"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
+                                <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
+                            </div>
+                            <input type="text" placeholder="Name *" required />
+                            <input type="email" placeholder="Email *" required />
+                            <input type="tel" placeholder="Phone" />
+                            <textarea rows="4" placeholder="Message" required></textarea>
+                            <button type="submit">Submit</button>
+                        </form>
+                    </div>
                 </div>
-                <button type="submit" class="btn btn-primary">Send Message</button>
-            </form>
+            </div>
         </div>
     </section>
+    
 
-    <footer class="bg-dark text-white text-center py-3">
-        <div class="container">
-            <p>&copy; 2024 Closing with Sandra. All rights reserved.</p>
+    <footer class="bg-dark text-white py-4">
+        <div class="container text-center">
+            <p>&copy; 2023 Close with Sandra. All Rights Reserved.</p>
+            <div class="footer-logos">
+                <img src="../Assets/equal-housing-logowhite-500.png" alt="Equal Housing Opportunity" class="footer-logo">
+                <img src="../Assets/realtor logo.png" alt="Realtor®" class="footer-logo">
+                <span class="powered-by">Powered by <a href="https://www.zillow.com" target="_blank"><img src="../Assets/Zillow_Wordmark_Blue_RGB lrg.png" alt="Zillow" class="footer-logo zillow-logo"></a></span>
+            </div>
         </div>
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.carousel').slick({
+                dots: true,
+                infinite: true,
+                speed: 300,
+                slidesToShow: 3,
+                slidesToScroll: 1,
+                responsive: [
+                    {
+                        breakpoint: 1024,
+                        settings: {
+                            slidesToShow: 3,
+                            slidesToScroll: 1,
+                            infinite: true,
+                            dots: true
+                        }
+                    },
+                    {
+                        breakpoint: 600,
+                        settings: {
+                            slidesToShow: 2,
+                            slidesToScroll: 1
+                        }
+                    },
+                    {
+                        breakpoint: 480,
+                        settings: {
+                            slidesToShow: 1,
+                            slidesToScroll: 1
+                        }
+                    }
+                ]
+            });
+        });
+    </script>
 </body>
 </html>

@@ -33,7 +33,7 @@ header .navbar-nav .nav-link {
 }
 
 header .navbar-nav .nav-link:hover {
-    color: #ccc;
+    color: #007bff!important;
     text-decoration: underline; /* Underline on hover */
 }
 
@@ -56,7 +56,35 @@ header .navbar-nav .nav-link:hover {
     font-size: 1.5rem;
 }
 
+.blue-line {
+    border-top: 4px solid #007bff;
+    width: 50%;
+    margin: 2rem auto;
+}
 
+.contact-card {
+    background-color: #f8f9fa;
+    padding: 1.5rem;
+    border-radius: 0.25rem;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+}
+
+.contact-card h4 {
+    margin-bottom: 1rem;
+}
+
+.contact-card p {
+    margin: 0.5rem 0;
+}
+
+.contact-card a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.contact-card a:hover {
+    text-decoration: underline;
+}
 
 #about {
     background-color: white; 
@@ -74,7 +102,7 @@ header .navbar-nav .nav-link:hover {
 
 #services {
     text-align: center;
-    background-color: #f8f9fa;
+    background-color: #202020;
     padding: 2rem 0;
 }
 
@@ -132,7 +160,7 @@ header .navbar-nav .nav-link:hover {
     padding: 1rem;
     border: 1px solid #ddd;
     border-radius: 5px;
-    transition: transform 0.3s ease; /* Add transition for smooth hover effect */
+    transition: transform 0.7s ease; /* Add transition for smooth hover effect */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -145,14 +173,166 @@ header .navbar-nav .nav-link:hover {
 
 #listings .card img {
     max-width: 100%;
-    height: 200px; /* Set a fixed height for the images */
+    height: 350px; /* Set a fixed height for the images */
     object-fit: cover; /* Ensure images cover the area */
     margin-bottom: 1rem;
 }
 
+
 footer {
+    position: relative;
     background-color: #343a40;
     color: white;
     padding: 1rem 0;
     text-align: center;
+}
+
+footer {
+    position: relative; /* Make sure footer has a relative position */
+}
+
+.footer-logos {
+    display: flex;
+    justify-content: center; /* Align items to the right */
+    margin-top: 1rem;
+}
+
+.footer-logo {
+    width: 70px; /* Default size for logos */
+    margin: 0 10px; /* Spacing between logos */
+}
+
+.zillow-logo {
+    width: 125px; /* Larger size for Zillow logo */
+}
+
+.powered-by {
+    margin-top: 0.5rem;
+    display: flex;
+    align-items: center; /* Center vertically with the logos */
+}
+
+.powered-by a {
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 5px; /* Space between "Powered by" text and Zillow logo */
+}
+
+.powered-by a:hover {
+    text-decoration: underline;
+}
+
+#contact{
+    position: relative;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+
+
+.form-container {
+    display: flex;
+    width: 100%;
+}
+
+.left-container {
+    flex: 1;
+    background-color: #007bff;
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-inner-container {
+    text-align: center;
+}
+
+.left-container h2 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+.left-container p {
+    font-size: 0.9rem;
+}
+
+.right-container {
+    flex: 1;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right-inner-container {
+    width: 70%;
+    text-align: center;
+}
+
+input, textarea {
+    background-color: #eee;
+    border: none;
+    padding: 12px 15px;
+    margin: 8px 0;
+    width: 100%;
+    font-size: 0.8rem;
+}
+
+input:focus, textarea:focus {
+    outline: 1px solid #007bff;
+}
+
+button {
+    border-radius: 20px;
+    border: 1px solid #007bff;
+    background-color: #007bff;
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 12px 45px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    transition: opacity 0.3s ease-in;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: 0.7;
+}
+
+.social-container {
+    margin-bottom: 1rem;
+}
+
+.social {
+    margin: 0 0.5rem;
+    color: #00b4cf;
+    font-size: 1.5rem;
+    text-decoration: none;
+}
+
+.social i {
+    vertical-align: middle;
+}
+
+@media only screen and (max-width: 600px) {
+    .left-container {
+        display: none;
+    }
+    .lg-view {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .sm-view {
+        display: none;
+    }
+}
+
+form p {
+    text-align: left;
 }
