@@ -28,7 +28,7 @@ header .navbar-nav .nav-link:hover {
 
 #banner {
     background: url(../Assets/kitchen_white.jpg) no-repeat center center/cover;
-    height: 25vh;
+    height: 50vh;
     display: flex;
     justify-content: center;
     align-items: center;

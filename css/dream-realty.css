@@ -27,7 +27,7 @@ header .navbar-nav .nav-link:hover {
 }
 
 #banner {
-    background: url(../Assets/kitchen_white.jpg) no-repeat center center/cover;
+    background: url(../Assets/afternoon.jpg) no-repeat center center/cover;
     height: 50vh;
     display: flex;
     justify-content: center;
@@ -45,6 +45,29 @@ header .navbar-nav .nav-link:hover {
     justify-content: center;
     align-items: center;
 }
+
+#about_dream{
+    background-color: #f1f1f1; 
+    padding: 8rem 0 2rem; /* Add padding-top for spacing from the banner */
+    text-align: center!important; 
+}
+
+#about_dream h1 {
+    color: #333; 
+    
+}
+
+#about_dream h3 {
+    color: #333; 
+
+}
+
+#about_dream p {
+    color: #333; 
+    font-size: x-large;
+}
+
+
 
 #contact {
     background-color: #f1f1f1;
@@ -85,8 +108,20 @@ header .navbar-nav .nav-link:hover {
     transition: background-color 0.3s ease;
 }
 
-#contact button:hover {
-    background-color: #0056b3;
+#promo-banner {
+    background-color: #2f2f30;
+    padding: 5rem 0;
+    color: white;
+}
+
+#promo-banner img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+#promo-banner h2 {
+    font-size: 2rem;
 }
 
 footer {
@@ -94,16 +129,24 @@ footer {
     color: white;
 }
 
-.business-card {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+#team .card {
+    border: none;
     border-radius: 10px;
-    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.business-card img {
-    border-bottom: 1px solid #ccc;
+#team .card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
-.business-card .card-body {
-    padding: 1rem;
+#team .card img {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+#team .card-body {
+    padding: 1.5rem;
 }
