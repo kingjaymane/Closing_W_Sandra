@@ -52,14 +52,14 @@
                         I'm eager to help and would love to talk to you.</p>
                 </div>
                 <div class="col-md-6">
-                    <img src="/Assets/full_body_red.jpg" alt="Sandra" class="img-fluid rounded">
+                    <img src="/Assets/halfbody.png" alt="Sandra" class="img-fluid rounded">
                 </div>
             </div>
             <hr class="blue-line">
             <div class="contact-card mt-4">
                 <h4>Contact Me</h4>
                 <p class="card-text">Lic #: 336390</p>
-                <p>Phone: (910) 549-8213</p>
+                <p>Phone: (910) 549-8215</p>
                 <p>Email:<a href="mailto:Ssmithrealtor213@gmail.com">Ssmithrealtor213@gmail.com</a></p>
             </div>
         </div>
@@ -221,7 +221,8 @@
                 </div>
                 <div class="right-container">
                     <div class="right-inner-container">
-                        <form action="https://formspree.io/f/xzzprwgv" method="POST">
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="cf81c3f8-9650-44e9-9baf-17d0b393d520" />
                             <h2 class="lg-view">Contact Me</h2>
                             <h2 class="sm-view">Let's Chat</h2>
                             <p>* Required</p>
@@ -230,10 +231,10 @@
                                 <a href="#" class="social"><i class="fab fa-google-plus-g"></i></a>
                                 <a href="#" class="social"><i class="fab fa-linkedin-in"></i></a>
                             </div>
-                            <input type="text" placeholder="Name *" required />
-                            <input type="email" placeholder="Email *" required />
-                            <input type="tel" placeholder="Phone" />
-                            <textarea rows="4" placeholder="Message" required></textarea>
+                            <input type="text" name="name" placeholder="Name *" required />
+                            <input type="email" name="email" placeholder="Email *" required />
+                            <input type="tel" name="phone" placeholder="Phone" />
+                            <textarea rows="4" name="message" placeholder="Message" required></textarea>
                             <button type="submit">Submit</button>
                         </form>
                     </div>
@@ -241,6 +242,7 @@
             </div>
         </div>
     </section>
+    
     
 
     <footer class="bg-dark text-white py-4">
